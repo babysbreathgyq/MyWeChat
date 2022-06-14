@@ -155,6 +155,8 @@ open class MainActivity : AppCompatActivity(), View.OnClickListener {
                 linearLayout2?.setBackgroundColor(Color.rgb(155,155,155))
             }
             R.id.linearLayout3 -> {
+                val intent = Intent(this,SunnyActivity::class.java)
+                startActivity(intent)
                 linearLayout1?.setBackgroundColor(Color.rgb(244,244,244))
                 linearLayout2?.setBackgroundColor(Color.rgb(244,244,244))
                 linearLayout4?.setBackgroundColor(Color.rgb(244,244,244))
