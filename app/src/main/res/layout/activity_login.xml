@@ -4,6 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="用户名登录"
+        android:textSize="38sp"
+        android:layout_marginBottom="20dp"/>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -13,7 +21,7 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:layout_gravity="center_vertical"
-            android:hint="请填写手机号"
+            android:hint="请填写用户名"
             android:text="帐号:" />
         <EditText
             android:id="@+id/edt_username"
@@ -54,36 +62,54 @@
     </LinearLayout>
 
     <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/btn_login"
+            android:layout_marginStart="120dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="登录"
-            android:layout_marginEnd="10dp"/>
+            android:layout_marginEnd="10dp"
+            android:textColor="#fff"
+            android:background="#04BE02"/>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/btn_clear"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="清除"
-            android:layout_marginEnd="10dp"/>
-
-        <Button
-            android:id="@+id/btn_cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="取消"
-            android:layout_marginEnd="10dp"/>
-
-        <Button
-            android:id="@+id/btn_register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="注册" />
+            android:layout_marginEnd="10dp"
+            android:textColor="#fff"
+            android:background="#04BE02"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <android.widget.Button
+            android:id="@+id/btn_cancel"
+            android:layout_marginStart="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出"
+            android:layout_marginEnd="10dp"
+            android:textColor="#fff"
+            android:background="#04BE02"/>
 
+        <android.widget.Button
+            android:id="@+id/btn_register"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="#fff"
+            android:background="#04BE02"/>
+
+    </LinearLayout>
 </LinearLayout>

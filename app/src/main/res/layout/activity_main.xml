@@ -25,19 +25,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="500dp"/>
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/forceOffline"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="强制下线吧你"/>
+                android:textColor="#fff"
+                android:background="#04BE02"
+                android:text="强制下线"/>
 
-            <Button
-                android:id="@+id/test"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="测试按钮"/>
+
         </LinearLayout>
 
         <include layout="@layout/buttom" />

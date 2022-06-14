@@ -4,7 +4,6 @@ package com.example.mywechat
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -31,8 +30,8 @@ class LoginActivity : MainActivity() {
         binding.btnLogin.setOnClickListener {
             val username = binding.edtUsername.text.toString()
             val password = binding.edtPassword.text.toString()
-            // 如果账号是13713911332且密码是123456，就认为登录成功
-            if (username == "13713911332" && password == "123456") {
+            // 如果账号是admin且密码是admin，就认为登录成功
+            if (username == "admin" && password == "admin") {
                 val editor = prefs.edit()   // 获取一个SharedPreferences.Editor对象
                 if (binding.cbAutoLogin.isChecked) { // 检查复选框是否被选中
                     editor.putBoolean("remember_password", true)
@@ -56,6 +55,7 @@ class LoginActivity : MainActivity() {
             binding.cbAutoLogin.isChecked = false
             binding.edtUsername.setText("")
             binding.edtPassword.setText("")
+            editor.apply()
         }
 
         binding.btnCancel.setOnClickListener {

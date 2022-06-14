@@ -67,10 +67,10 @@ open class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onStart() {
         super.onStart()
-        binding.test.setOnClickListener {
+        /*binding.test.setOnClickListener {
             val friendInformation : TextView = findViewById(R.id.friend_information)
-            friendInformation.text = "wori"
-        }
+            friendInformation.text = "ceshi"
+        }*/
     }
 
     // 注册广播
