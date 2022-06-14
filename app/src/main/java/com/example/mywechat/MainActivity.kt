@@ -143,16 +143,28 @@ open class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.linearLayout1 -> {
-
+                linearLayout3?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout2?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout4?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout1?.setBackgroundColor(Color.rgb(155,155,155))
             }
             R.id.linearLayout2 -> {
-
+                linearLayout1?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout3?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout4?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout2?.setBackgroundColor(Color.rgb(155,155,155))
             }
             R.id.linearLayout3 -> {
-
+                linearLayout1?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout2?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout4?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout3?.setBackgroundColor(Color.rgb(155,155,155))
             }
             R.id.linearLayout4 -> {
-
+                linearLayout1?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout2?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout3?.setBackgroundColor(Color.rgb(244,244,244))
+                linearLayout4?.setBackgroundColor(Color.rgb(155,155,155))
             }
         }
     }

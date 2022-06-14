@@ -58,9 +58,19 @@ class RegisterActivity : MainActivity(), TextWatcher, View.OnClickListener {
         }
 
         val strPhone: String = binding.edPhoneNumber.text.toString()
+        val strUser : String = binding.edName.text.toString()
         // regex为正则表达式字符串
-        val regex = "^1(3[0-9]|5[0-3,5-9]|7[1-3,5-8]|8[0-9])\\d{8}\$*"
-        if (strPhone.matches(regex.toRegex())) {
+        val regexPhone = "^1(3[0-9]|5[0-3,5-9]|7[1-3,5-8]|8[0-9])\\d{8}\$*"
+        val regexUser = "^[a-z0-9_-]{3,16}\$"
+
+        if (strUser.matches(regexUser.toRegex())) {
+
+        }
+        else {
+            binding.edName.setError("请输入正确的用户名(例如:abc)")
+        }
+
+        if (strPhone.matches(regexPhone.toRegex())) {
 
         }
         else {
