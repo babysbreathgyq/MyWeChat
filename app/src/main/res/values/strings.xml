@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyWechat</string>
+    <string name="protocol">我已阅读并同意&lt;&lt;软件许可及服务协议&gt;&gt;\n 本页面手机的信息仅用于注册账号</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
